@@ -46,6 +46,7 @@
             border: 5px double white;
         }
 
+
         .diarias {
             background-color: gray;
             color: white;
@@ -80,10 +81,97 @@
         #Boascontas {
             display: none;
         }
+        #aventuraterra{
+            display: none;
+}
+#primeirocontato{
+            display: none;
+}
+#colheitaestival{
+            display: none;
+}#Crateraadmissao{
+            display: none;
+}#CacaKaskas{
+            display: none;
+}#Farpavulkaniana{
+            display: none;
+}
 
         p {
             display: inline-block;
         }
+        /* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 2px;
+  padding-top: 5px;
+  cursor: pointer;
+  /* font-size: 22px; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+div{
+    padding-left: 1em;
+}
+
     </style>
     <h2>Antes de tudo!</h2>
 
@@ -100,64 +188,176 @@
     <button id="selosazonal1" class="start" onclick="Mudarestado('selosazonal')">Selo Sazonal</button> <br>
 
     <div id="selosazonal">
-
+        <button id="primeirocontato1" class="start" onclick="Mudarestado('primeirocontato')">Primeiro Contato</button> <br>
         <div id="primeirocontato">
-            <h4>Primeiro Contato</h4>
-            Fale com: Betty Boob [-48,44]
+            
+            <label class="container" onclick="travelmount('-48,44')">
+                <input type="checkbox"> 
+                Fale com: Betty Boob [-48,44]
+               <span class="checkmark"></span>
+             </label>
+            
         </div>
 
-
+        <button id="aventuraterra1" class="start" onclick="Mudarestado('aventuraterra')">Aventura na Terra</button> <br>
         <div id="aventuraterra">
-            <h4>Aventura na Terra</h4>
-            Fale com Betty Boob em [-48,44] no Vilarejo de Vulkania ao final da missão Primeiro Contato. <br>
-            Descubra o mapa: Praia de Bronze [-50,45] <br>
-            Descubra o mapa: Cratera Bdela [-50,42] <br>
-            Descubra o mapa: Praia da Prancha [-54,44] <br>
-            Descubra o mapa: Ilha Zamodas [-57,46] <br>
-            Descubra o mapa: Cemitério O Sossego [-53,40] <br>
-            Descubra o mapa: Cratera Fosa [-55,39] <br>
-            Descubra o mapa: Cratera Toide [-52,37] <br>
-            Descubra o mapa: Cratera Peuta [-49,40] <br>
-            Descubra o mapa: Cratera Baite [-51,40] <br>
-            Descubra o mapa: Bar Akuda [-44,44] <br>
-            Fale com: Betty Boob novamente [-48,44] <br>
+            
+            <label class="container" onclick="travelmount('-48,44')">
+                 <input type="checkbox"> 
+                Fale com Betty Boob em [-48,44] no Vilarejo de Vulkania ao final da missão Primeiro Contato.
+                <span class="checkmark"></span>
+              </label>
+              <label class="container" onclick="travelmount('-50,45')">
+                <input type="checkbox"> 
+                Descubra o mapa: Praia de Bronze [-50,45]
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-50,42')">
+                <input type="checkbox"> 
+                Descubra o mapa: Cratera Bdela [-50,42]
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-54,44')">
+                <input type="checkbox"> 
+                Descubra o mapa: Praia da Prancha [-54,44]
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-57,46')">
+                <input type="checkbox"> 
+                Descubra o mapa: Ilha Zamodas [-57,46]
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-53,40')">
+                <input type="checkbox"> 
+                Descubra o mapa: Cemitério O Sossego [-53,40]
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-55,39')">
+                <input type="checkbox"> 
+                Descubra o mapa: Cratera Fosa [-55,39]
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-52,37')">
+                <input type="checkbox"> 
+                Descubra o mapa: Cratera Toide [-52,37]
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-49,40')">
+                <input type="checkbox"> 
+                Descubra o mapa: Cratera Peuta [-49,40]
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-51,40')">
+                <input type="checkbox"> 
+                Descubra o mapa: Cratera Baite [-51,40]
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-44,44')">
+                <input type="checkbox"> 
+                Descubra o mapa: Bar Akuda [-44,44]
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-48,44')">
+                <input type="checkbox"> 
+                Fale com: Betty Boob novamente [-48,44]
+               <span class="checkmark"></span>
+             </label>
+            
+            
         </div>
-
+        <button id="colheitaestival1" class="start" onclick="Mudarestado('colheitaestival')">Encontro de Verão/Colheita Estival</button> <br>
         <div id="colheitaestival">
-            <h4>Encontro de Verão/Colheita Estival</h4>
-            Fale com Tomas Cuki em [-49,44] no Vilarejo de Vulkânia. --Você deve obter no mínimo 80 pontos durante a
+            <label class="container" onclick="travelmount('-49,44')">
+                <input type="checkbox"> 
+                Fale com Tomas Cuki em [-49,44] no Vilarejo de Vulkânia. --Você deve obter no mínimo 80 pontos durante a
             atividade "Coleta de Conchas" (depois meter mais detalhes
             https://dofus.fandom.com/pt-br/wiki/Encontro_de_Verão)
+               <span class="checkmark"></span>
+             </label>
+            
 
         </div>
-
+        <button id="Crateraadmissao1" class="start" onclick="Mudarestado('Crateraadmissao')">Cratera da Admissão</button> <br>
         <div id="Crateraadmissao">
-            <h4>Cratera da Admissão</h4>
-            Fale com Matt Hemático em [-50,44] no Vilarejo de Vulkânia. <br>
-            Cabeça - No primeiro mapa de qualquer cratera, exceto a Cratera Baite. [-49,40], [-50,42], [-52,37] ou
-            [-55,39]. Clique no cristal no primeiro mapa dentro da cratera. <br>
-            Corpo [-53,40] - Clique na alavanca ao lado direito da casa. <br>
-            Braço esquerdo [-49,47] - Vá para [-49,45], fale com A.P.A.T. Clauman e vá para Pontomai. Clique na
-            bandeira. <br>
-            Braço direito [-54,34] - Vá para [-54,38], fale com A.P.A.T. Tobe e vá para Vulkorog. Clique na bandeira.
-            <br>
-            Perna esquerda [-55,42] - Clique na árvore. <br>
-            Perna direita [-48,40] - Entre na cabana e clique no saco com laranjas. <br>
-            Leve as seis peças do totem para Matt Hemático [-50,44] <br>
-            Entregue a G.O. Cébero: 1x Totem Erário [-51,40] <br>
+            <label class="container" onclick="travelmount('-50,44')">
+                <input type="checkbox"> 
+                Fale com Matt Hemático em [-50,44] no Vilarejo de Vulkânia.
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="pegaUmQualquer('-49,40','-50,42','-52,37','-55,39')">
+                <input type="checkbox"> 
+                Cabeça - No primeiro mapa de qualquer cratera, exceto a Cratera Baite. [-49,40], [-50,42], [-52,37] ou
+            [-55,39]. Clique no cristal no primeiro mapa dentro da cratera.
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-53,40')">
+                <input type="checkbox"> 
+                Corpo [-53,40] - Clique na alavanca ao lado direito da casa.
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-49,45')">
+                <input type="checkbox"> 
+                Vá para [-49,45], fale com A.P.A.T. Clauman e vá para Pontomai. 
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-49,47')">
+                <input type="checkbox"> 
+                Braço esquerdo [-49,47] em Pontomai. Clique na bandeira.
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-54,38')">
+                <input type="checkbox"> 
+                Vá para [-54,38], fale com A.P.A.T. Tobe e vá para Vulkorog. 
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-54,34')">
+                <input type="checkbox"> 
+                Braço direito [-54,34] em Vulkorog. Clique na bandeira.
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-55,42')">
+                <input type="checkbox"> 
+                Perna esquerda [-55,42] - Clique na árvore.
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-48,40')">
+                <input type="checkbox"> 
+                Perna direita [-48,40] - Entre na cabana e clique no saco com laranjas.
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-50,44')">
+                <input type="checkbox"> 
+                Leve as seis peças do totem para Matt Hemático [-50,44]
+               <span class="checkmark"></span>
+             </label>
+             <label class="container" onclick="travelmount('-51,40')">
+                <input type="checkbox"> 
+                Entregue a G.O. Cébero: 1x Totem Erário [-51,40]
+               <span class="checkmark"></span>
+             </label>
+            
+            
         </div>
-
+        <button id="CacaKaskas1" class="start" onclick="Mudarestado('CacaKaskas')">Caça às Kaskas</button> <br>
         <div id="CacaKaskas">
-            <h4>Caça às Kaskas</h4>
-            Fale com Nevark, o Caçador em [-47,42] no Vilarejo de Vulkânia. <br>
-            Coletar 30 Línguas de Kaska e levá-las para Nevark, o Caçador [-47,42] br
+            <label class="container" onclick="travelmount('-47,42')" title="Coletar 30 Línguas de Kaska e levá-las para Nevark, o Caçador [-47,42] (obtem-se as linguas de kaska a matar kaskas correspondentes ao seu nivel de personagem)">
+                <input type="checkbox"> 
+                Fale com Nevark, o Caçador em [-47,42] no Vilarejo de Vulkânia e depois colete 30 linguas de kaska e entregue-as.
+               <span class="checkmark"></span>
+             </label>
+             
+            
 
         </div>
-
+        <button id="Farpavulkaniana1" class="start" onclick="Mudarestado('Farpavulkaniana')">Farpa Vulkaniana</button> <br>
         <div id="Farpavulkaniana">
-            <h4>Farpa Vulkaniana</h4>
-            Fale com Azule Jaria em [-51,40] dentro da Cratera Baite.
-
+            <label class="container" onclick="travelmount('-51,40')" title="Derrote 20x Kaska Venerável Crua dentro da Cratera correspondente ao seu nivel.">
+                <input type="checkbox"> 
+                Fale com Azule Jaria em [-51,40] dentro da Cratera Baite e depois derrote 20 Kaska Venerável Crua e conclua a missão.
+               <span class="checkmark"></span>
+             </label>
+            
+            
 
         </div>
 
@@ -341,26 +541,72 @@
     <br>
 
     <div id="Boascontas">
-
-        Items a comprar para a missão: <br>
+        <label class="container" onclick="travelmount('-48,44')" title="dentro da cabana o otto bilendrock vende os itens">
+            <input type="checkbox"> 
+            Items a comprar para a missão:
+           <span class="checkmark"></span>
+         </label>
+        
         <ul>
 
             <li>Pedra Negra de Vulkânia </li>
             <li>Estatueta de Kaska </li>
             <li>Relíquia do Cemitério O Sossego </li>
         </ul>
-        Fale com Bo Peye em [-51,45] na Praia de Bronze. <br>
-        Fale com: Piki [-44,44] <br>
-        Fale com: Juju [-44,44] <br>
-        Fale com: G.O. Cébero [-51,40](jogar-se aos pes) <br>
-        Fale com: G.O. Logia [-52,37](Entregue 1 Pedra Negra de Vulkânia para que ela fale seu peso.) <br>
-        Fale com: Nevark, o Caçador [-47,42](Entregue 1 Estatueta de Kaska para que ele fale seu peso.) <br>
-        Fale com: Dina Tapio [-46,44] <br>
-        Fale com: Seb Hultura [-53,40](Responda "O dobro do triplo dividido por seis vezes o meu peso" e entregue 1
-        Relíquia do Cemitério O Sossego para que ele fale seu peso.) <br>
-        Fale com: Bo Peye novamente [-51,45] <br>
+        <label class="container" onclick="travelmount('-51,45')">
+            <input type="checkbox"> 
+            Fale com Bo Peye em [-51,45] na Praia de Bronze.
+           <span class="checkmark"></span>
+         </label>
+         <label class="container" onclick="travelmount('-47,42')">
+            <input type="checkbox"> 
+            Fale com: Nevark, o Caçador [-47,42](Entregue 1 Estatueta de Kaska para que ele fale seu peso.)
+           <span class="checkmark"></span>
+         </label>
+         <label class="container" onclick="travelmount('-46,44')">
+            <input type="checkbox"> 
+            Fale com: Dina Tapio [-46,44]
+           <span class="checkmark"></span>
+         </label>
+         <label class="container" onclick="travelmount('-46,44')">
+            <input type="checkbox"> 
+            Agora clique no A.P.A.T SUNDA [-46,44] e va ate ao bar akuda
+           <span class="checkmark"></span>
+         </label>
+         <label class="container" onclick="travelmount('-44,44')">
+            <input type="checkbox"> 
+            Fale com: Piki [-44,44] (dentro do bar)
+           <span class="checkmark"></span>
+         </label>
+         <label class="container" onclick="travelmount('-44,44')">
+            <input type="checkbox"> 
+            Fale com: Juju [-44,44] (dentro do bar)
+           <span class="checkmark"></span>
+         </label>
+         <label class="container" onclick="travelmount('-51,40')">
+            <input type="checkbox"> 
+            Fale com: G.O.Cébero [-51,40](jogar-se aos pes)
+           <span class="checkmark"></span>
+         </label>
+         <label class="container" onclick="travelmount('-52,37')">
+            <input type="checkbox"> 
+            Fale com: G.O. Logia [-52,37](Entregue 1 Pedra Negra de Vulkânia para que ela fale seu peso.)
+           <span class="checkmark"></span>
+         </label>
+         <label class="container" onclick="travelmount('-53,40')">
+            <input type="checkbox"> 
+            Fale com: Seb Hultura [-53,40](Responda "O dobro do triplo dividido por seis vezes o meu peso" e entregue 1
+        Relíquia do Cemitério O Sossego para que ele fale seu peso.)
+           <span class="checkmark"></span>
+         </label>
+         <label class="container" onclick="travelmount('-51,45')">
+            <input type="checkbox"> 
+            Fale com: Bo Peye novamente [-51,45]
+           <span class="checkmark"></span>
+         </label>
+        
         Selecione os três NPCs cuja soma dos pesos seja igual a 215. Clique duas vezes no item Folha de Anotações para
-        consultar os pesos dos NPCs. Os valores mudam toda semana. <br>
+        consultar os pesos dos NPCs. Os valores mudam toda semana e abaixo esta uma calcuradora para ajudar xD.(os pesos deles estao apontes na folha de anotaçoes que esta no seu inventario) <br>
     </div>
     <br>
     <p>Piki <input type="text" name="Piki" id="piki"></p>
@@ -380,46 +626,6 @@
     <input type="button" value="calculate" onclick="calcular()">
     <br>
 
-    <span>posições do Gluxur</span>
-    <br>
-    <button id="Gluxur1" class="Gluxur" onclick="travelmount('-34,-83');help(1,'Gluxur');">1</button>
-    <button id="Gluxur2" class="Gluxur" onclick="travelmount('-35,-83');help(2,'Gluxur');">2</button>
-    <button id="Gluxur3" class="Gluxur" onclick="travelmount('-38,-84');help(3,'Gluxur');">3</button>
-    <button id="Gluxur4" class="Gluxur" onclick="travelmount('-39,-85');help(4,'Gluxur');">4</button>
-    <br>
-    <span>posições do Glupanar</span>
-    <br>
-    <button id="Glupanar1" class="Glupanar" onclick="travelmount('-38,-92');help(1,'Glupanar');">1</button>
-    <button id="Glupanar2" class="Glupanar" onclick="travelmount('-36,-93');help(2,'Glupanar');">2</button>
-    <button id="Glupanar3" class="Glupanar" onclick="travelmount('-33,-93');help(3,'Glupanar');">3</button>
-    <br>
-    <span>posições do Glubrik</span>
-    <br>
-    <button id="Glubrik1" class="Glubrik" onclick="travelmount('-29,-86');help(1,'Glubrik');">1</button>
-    <button id="Glubrik2" class="Glubrik" onclick="travelmount('-28,-89');help(2,'Glubrik');">2</button>
-    <button id="Glubrik3" class="Glubrik" onclick="travelmount('-30,-85');help(3,'Glubrik');">3</button>
-    <br>
-    <button id="clear" class="diarias" onclick="limpar(1);">Clear</button>
-    <br>
-    <img src="localisationdespnjs-fix498648_orig.png" height="250px" alt="mapadofus">
-    <br>
-    <span>Diarias:</span>
-    <br>
-    <button id="myInput" class="start" onclick="travelmount('-32,-86','0')">Aceitar diarias</button>
-    <br>
-    <button id="diarias1" class="diarias" onclick="travelmount('-28,-88');help(1,'diarias');">Glugubre</button>
-    <button id="diarias2" class="diarias" onclick="travelmount('-33,-91');help(2,'diarias');">Redolph</button>
-    <button id="diarias3" class="diarias" onclick="travelmount('-37,-87');help(3,'diarias');">laku karatcha</button>
-    <button id="diarias4" class="diarias" onclick="travelmount('-35,-89');help(4,'diarias');">Oogie Betty</button>
-    <br>
-    <button id="diarias5" class="diarias" onclick="travelmount('4,0');help(5,'diarias');">Felix</button>
-    <br>
-    <button id="clear" class="diarias" onclick="limpar(2);">Clear</button>
-    <br>
-    <button id="magos" class="magos" onclick="travelmount('-31,-88');">Gas Paw</button>
-    <button id="magos" class="magos" onclick="travelmount('-37,-86');">Balt azaw</button>
-    <button id="magos" class="magos" onclick="travelmount('-34,-92');">Mel Chiow</button>
-    <br>
     <span id="copy"> </span>
     <script>
         function calcular() {
@@ -444,6 +650,12 @@
                 }
             }
         }
+        function pegaUmQualquer(cord1,cord2,cord3,cord4) {
+            var nomes = [cord1, cord2, cord3,cord4];
+            console.log('cord1:'+cord1+'cord2:'+cord2+'cord3:'+cord3+'cord3:'+cord3+'cord4:'+cord4)
+            var name = nomes[Math.ceil(Math.random() * (nomes.length)-1)];
+            travelmount(name);
+}
         function Mudarestado(el) {
             var teste = el + "1";
             
