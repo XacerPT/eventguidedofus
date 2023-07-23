@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button{
+            height: 40px;
+            width: 40px;
+            margin: 3px;
+        }
+        .start{
+            background-color: white;
+            color: black;
+            border: black;
+            border-style: double;
+            height: 60px;
+            width: 200px;
+            
+        }
+        .Glubrik{
+            background-color: red;
+            color: white;
+            border: white;
+            
+        }
+        .Gluxur{
+            background-color: blue  ;
+            color: white;
+            border: white; 
+        }
+        .Glupanar{
+            background-color: greenyellow  ;
+            color: white;
+            border: white; 
+        }
+    </style>
+    <button id="myInput" class="start" onclick="myFunction('/travel -29,-86')">Começar Missão com Glubrik!</button>
+    <br>
+    <span>posições do Glubrik</span>
+    <br>
+    <button id="myInput" class="Glubrik" onclick="myFunction('/travel -29,-86')">1</button>
+    <button id="myInput" class="Glubrik" onclick="myFunction('/travel -28,-89')">2</button>
+    <button id="myInput" class="Glubrik" onclick="myFunction('/travel -30,-85')">3</button>
+    <br>
+    <span>posições do Gluxur</span>
+    <br>
+    <button id="myInput" class="Gluxur" onclick="myFunction('/travel -34,-83')">1</button>
+    <button id="myInput" class="Gluxur" onclick="myFunction('/travel -35,-83')">2</button>
+    <button id="myInput" class="Gluxur" onclick="myFunction('/travel -38,-84')">3</button>
+    <button id="myInput" class="Gluxur" onclick="myFunction('/travel -39,-85')">4</button>
+    <br>
+    <span>posições do Glupanar</span>
+    <br>
+    <button id="myInput" class="Glupanar" onclick="myFunction('/travel -38,-92')">1</button>
+    <button id="myInput" class="Glupanar" onclick="myFunction('/travel -36,-93')">2</button>
+    <button id="myInput" class="Glupanar" onclick="myFunction('/travel -33,-93')">3</button>
+    <script>function myFunction(value) {
+        // Get the text field
+        var copyText = value
+        //document.getElementById("myInput");
+        //
+       
+        // Select the text field
+        //copyText.select();
+        //copyText.setSelectionRange(0, 99999); // For mobile devices
+      
+         // Copy the text inside the text field
+        navigator.clipboard.writeText(value);
+      
+        // Alert the copied text
+        alert("Copied the text: " + value);
+      }</script>
+</body>
+</html>

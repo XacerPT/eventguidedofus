@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missões de Vulkania!</title>
+</head>
+
+<body>
+    <style>
+        button {
+            height: 40px;
+            width: 40px;
+            margin: 3px;
+            border: 5px double white;
+        }
+
+        .start {
+            background-color: white;
+            color: black;
+            border: black;
+            border-style: double;
+            height: auto+1px;
+            width: auto;
+
+        }
+
+        .Glubrik {
+            background-color: red;
+            color: white;
+            border: white;
+            border: 5px double white;
+        }
+
+        .Gluxur {
+            background-color: blue;
+            color: white;
+            border: 5px double white;
+        }
+
+        .Glupanar {
+            background-color: green;
+            color: white;
+            border: 5px double white;
+        }
+
+        .diarias {
+            background-color: gray;
+            color: white;
+            border-style: double;
+            width: 110px;
+        }
+
+        #selosazonal {
+            display: none;
+        }
+
+        #Inqueritoinvestiga {
+            display: none;
+        }
+
+        #Inqueritoidentifica {
+            display: none;
+        }
+
+        #Inqueritoconfronto {
+            display: none;
+        }
+
+        #Inqueritoresolucao {
+            display: none;
+        }
+
+        #atelogo {
+            display: none;
+        }
+
+        #Boascontas {
+            display: none;
+        }
+
+        p {
+            display: inline-block;
+        }
+    </style>
+    <h2>Antes de tudo!</h2>
+
+    <button id="myInput" class="start" onclick="travelmount('7,-4','0')" title="7,-4">Recomendado pegar o Zaap porto de
+        madrestam</button> <br>
+    <button id="myInput" class="start" onclick="travelmount('8,-5','0')" title="8,-5">Barco para o arquipelago de
+        Vulkania</button>
+    <br>
+    <div>
+
+
+        <br>
+    </div>
+    <button id="selosazonal1" class="start" onclick="Mudarestado('selosazonal')">Selo Sazonal</button> <br>
+
+    <div id="selosazonal">
+
+        <div id="primeirocontato">
+            <h4>Primeiro Contato</h4>
+            Fale com: Betty Boob [-48,44]
+        </div>
+
+
+        <div id="aventuraterra">
+            <h4>Aventura na Terra</h4>
+            Fale com Betty Boob em [-48,44] no Vilarejo de Vulkania ao final da missão Primeiro Contato. <br>
+            Descubra o mapa: Praia de Bronze [-50,45] <br>
+            Descubra o mapa: Cratera Bdela [-50,42] <br>
+            Descubra o mapa: Praia da Prancha [-54,44] <br>
+            Descubra o mapa: Ilha Zamodas [-57,46] <br>
+            Descubra o mapa: Cemitério O Sossego [-53,40] <br>
+            Descubra o mapa: Cratera Fosa [-55,39] <br>
+            Descubra o mapa: Cratera Toide [-52,37] <br>
+            Descubra o mapa: Cratera Peuta [-49,40] <br>
+            Descubra o mapa: Cratera Baite [-51,40] <br>
+            Descubra o mapa: Bar Akuda [-44,44] <br>
+            Fale com: Betty Boob novamente [-48,44] <br>
+        </div>
+
+        <div id="colheitaestival">
+            <h4>Encontro de Verão/Colheita Estival</h4>
+            Fale com Tomas Cuki em [-49,44] no Vilarejo de Vulkânia. --Você deve obter no mínimo 80 pontos durante a
+            atividade "Coleta de Conchas" (depois meter mais detalhes
+            https://dofus.fandom.com/pt-br/wiki/Encontro_de_Verão)
+
+        </div>
+
+        <div id="Crateraadmissao">
+            <h4>Cratera da Admissão</h4>
+            Fale com Matt Hemático em [-50,44] no Vilarejo de Vulkânia. <br>
+            Cabeça - No primeiro mapa de qualquer cratera, exceto a Cratera Baite. [-49,40], [-50,42], [-52,37] ou
+            [-55,39]. Clique no cristal no primeiro mapa dentro da cratera. <br>
+            Corpo [-53,40] - Clique na alavanca ao lado direito da casa. <br>
+            Braço esquerdo [-49,47] - Vá para [-49,45], fale com A.P.A.T. Clauman e vá para Pontomai. Clique na
+            bandeira. <br>
+            Braço direito [-54,34] - Vá para [-54,38], fale com A.P.A.T. Tobe e vá para Vulkorog. Clique na bandeira.
+            <br>
+            Perna esquerda [-55,42] - Clique na árvore. <br>
+            Perna direita [-48,40] - Entre na cabana e clique no saco com laranjas. <br>
+            Leve as seis peças do totem para Matt Hemático [-50,44] <br>
+            Entregue a G.O. Cébero: 1x Totem Erário [-51,40] <br>
+        </div>
+
+        <div id="CacaKaskas">
+            <h4>Caça às Kaskas</h4>
+            Fale com Nevark, o Caçador em [-47,42] no Vilarejo de Vulkânia. <br>
+            Coletar 30 Línguas de Kaska e levá-las para Nevark, o Caçador [-47,42] br
+
+        </div>
+
+        <div id="Farpavulkaniana">
+            <h4>Farpa Vulkaniana</h4>
+            Fale com Azule Jaria em [-51,40] dentro da Cratera Baite.
+
+
+        </div>
+
+
+    </div>
+
+    <button id="Inqueritoinvestiga1" class="start" onclick="Mudarestado('Inqueritoinvestiga')">Um Inquérito Alambicado -
+        Investigação</button> <br>
+
+    <div id="Inqueritoinvestiga">
+
+        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia. <br>
+
+        Colete uma amostra de Suze McGraff (Scarlet Richter) <br>
+        <div id="Perdeumiaw">
+
+            <h4>Inicie e conclua a missão A Pobre Scarlet Perdeu seu Miaw.</h4>
+            Fale com Scarlet Richter em [-45,45] no Farol Feyro depois de ter iniciado a missão Um Inquérito Alambicado
+            - Investigação. <br>
+            Fale com: Otto Bilendrock [-48,44] <br>
+            Fale com: Nevark, o Caçador [-47,42] <br>
+            Encontre o Dekster(Dekster está dentro de um barril em [-57,46]. Vá em [-55,44] e fale com A.P.A.T. Mamadu
+            para ter acesso à ilha.) <br>
+            Fale com Scarlet Richter novamente [-45,45] <br>
+            Derrote 1x Cacamundongo Turista em um único combate <br>
+            Pegue o Dekster [-57,46](Clique no barril.) <br>
+            Entregue a Scarlet Richter: 1x Dekster, o Miaw [-45,45] <br>
+
+        </div>
+
+        Colete uma amostra do Professor Ivan Harvtvigg (Otto Bilendrock) <br>
+        <div id="Memoriasperdidas">
+            <h4>Inicie e conclua a missão Memórias Perdidas.</h4>
+            Fale com Otto Bilendrock em [-48,44] dentro da sua loja no Vilarejo de Vulkânia depois de ter iniciado a
+            missão Um Inquérito Alambicado - Investigação. <br>
+            Fale com Matt Hemático em [-50,44]. <br>
+            Leia a nota na entrada da Cratera Baite em [-51,40]. <br>
+            Fale com Dina Tapio [-46,44]. <br>
+            Fale com Capitã Jeine Wey em [-48,44]. <br>
+            Fale com Otto Bilendrock novamente [-48,44] <br>
+            Peça uma amostra ao Otto Bilendrock [-48,44] <br>
+
+
+        </div>
+
+        Colete uma amostra de Stak
+
+        <div id="Preencheburaco">
+
+            <h4>Inicie e conclua a missão Como Você Preenche um Buraco?.</h4>
+            Fale com Stak em [-55,43] na Praia da Prancha depois de ter iniciado a missão Um Inquérito Alambicado -
+            Investigação. <br>
+            Colete Chiclete Sinuoso na Floresta Traktopel.(Equipe as Luvas Masticator e clique na árvore em [-51,42] ou
+            [-52,44].) <br>
+            Colete Chiclete Sinuoso na Floresta Spartania.(Equipe as Luvas Masticator e clique na árvore em [-54,40] ou
+            [-55,42].) <br>
+            Colete Chiclete Sinuoso na Floresta Stratigra.(Equipe as Luvas Masticator e clique na árvore em [-51,39] ou
+            [-52,38].) <br>
+            Encontre uma Pedra-pomes(Clique na pedra em [-49,41] ou [-50,40].) <br>
+            Fale com Stak novamente [-55,43] <br>
+            Peça uma amostra ao Stak <br>
+
+
+        </div>
+
+        Colete uma amostra de Stok
+
+        <div id="Precisasal">
+
+            <h4>Inicie e conclua a missão Precisa de Mais Sal!.</h4>
+            Fale com Stok em [-50,45] na Praia do Bronze depois de ter iniciado a missão Um Inquérito Alambicado -
+            Investigação. <br>
+            Encontre Cristais de Sal de Bah <br>
+            Encontre Cristais de Sal de Verão <br>
+            Encontre Cristais de Sal de Alyda <br>
+            Os cristais de sal podem ser encontrados na Ilha Sem Nome. Vá até [-49,36] e fale com A.P.A.T. Maripa para
+            ter acesso à ilha. Certifique-se de que coletou os três tipos de cristais. <br>
+            /travel -46,44 e use o A.P.A.T. E depois Use o moedor de sal [-44,44](Clique no moedor no lado direito da
+            entrada do Bar Akuda.) <br>
+            Fale com Stok novamente [-50,45] <br>
+            Fale com: Stak [-55,43] <br>
+            Peça um Coquetel Abrasivo a Juju [-44,44] <br>
+            Conserte o moedor de sal [-44,44] <br>
+            Triture os Cristais de Sal [-44,44] <br>
+            Fale com Stok novamente [-50,45] <br>
+            Peça uma amostra ao Stok [-50,45] <br>
+
+        </div>
+        Colete uma amostra de Tom Stone (Seb Hultura)
+        <div id="Tecnicaplacas">
+
+            <h4>Inicie e conclua a missão A Técnica das Placas.</h4>
+            Fale com Seb Hultura em [-53,40] no Cemitério O Sossego depois de ter iniciado a missão Um Inquérito
+            Alambicado - Investigação. <br>
+            Leia a inscrição da primeira tumba [-55,40] <br>
+            Leia a inscrição da segunda tumba [-56,40] <br>
+            Leia a inscrição da terceira tumba [-56,41] <br>
+            Leia a inscrição da quarta tumba [-56,41] <br>
+            Leia a inscrição da quinta tumba [-55,41] <br>
+            Leia a inscrição da sexta tumba [-56,41] <br>
+            Fale com Seb Hultura novamente [-53,40] <br>
+            Você precisa dar respostas corretas para Seb Hultura. A ordem das respostas são: <br>
+            <ol>
+                <li> Frisby Bufê </li>
+                <li> Joel Tribiano </li>
+                <li> Harmonika Gueli </li>
+                <li> Chanduló Bong </li>
+                <li> Ruço Gueli </li>
+                <li> Rochelle Grill </li>
+            </ol>
+
+
+
+        </div>
+        Leve as amostras de volta para Tony Bleurgh (Saré Josney) [-47,44]
+
+
+
+    </div>
+
+    <button id="Inqueritoidentifica1" class="start" onclick="Mudarestado('Inqueritoidentifica')">Um Inquérito Alambicado -
+        Identificação</button> <br>
+
+    <div id="Inqueritoidentifica">
+
+
+        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado -
+        Investigação. <br>
+        Descubra o mapa: Barnacabin de Saré Josney(Entre na casa atrás de Saré Josney.) <br>
+        Fale com: Saré Josney [-47,44] <br>
+        Complete a análise do DIC usando a destilaria [-47,44](Clique no alambique dentro da casa.) <br>
+        Fale com Saré Josney novamente [-47,44](Na última parte do diálogo você será informado com qual NPC falar para a
+        próxima etapa. O suspeito será escolhido aleatoriamente.)
+
+    </div>
+    <button id="Inqueritoconfronto1" class="start" onclick="Mudarestado('Inqueritoconfronto')">Um Inquérito Alambicado -
+        Confronto</button> <br>
+
+    <div id="Inqueritoconfronto">
+
+        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado -
+        Identificação. <br>
+        Consiga uma confissão do culpado identificado pelo DIC(Fale com o NPC que Saré Josney lhe deu na missão
+        anterior. Se não lembrar, consulte o item de missão Conclusão da DIC.) <br>
+        Fale com Saré Josney novamente [-47,44] <br>
+        Você precisar dar ao Saré Josney o nome do novo suspeito, que depende do primeiro suspeito. Se o seu primeiro
+        suspeito foi: <br>
+        Scarlet Richter - diga a ele que foi Seb Hultura. <br>
+        Otto Bilendrock - diga a ele que foi Scarlet Richter. <br>
+        Stok - diga a ele que foi Stak. <br>
+        Stak - diga a ele que foi Stok. <br>
+        Seb Hultura - diga a ele que foi Otto Bilendrock. <br>
+    </div>
+    <button id="Inqueritoresolucao1" class="start" onclick="Mudarestado('Inqueritoresolucao')">Um Inquérito Alambicado -
+        Resolução</button> <br>
+
+    <div id="Inqueritoresolucao">
+
+        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado - Confronto.
+        <br>
+        Fale com: Saré Josney [-47,44]( <br>
+        Você precisa dar ao Saré Josney o nome do novo suspeito, que depende de quem foi o primeiro suspeito. Se o seu
+        primeiro suspeito foi: <br>
+        Scarlet Richter - diga a ele que foi Seb Hultura. <br>
+        Otto Bilendrock - diga a ele que foi Scarlet Richter. <br>
+        Stok - diga a ele que foi Stak. <br>
+        Stak - diga a ele que foi Stok. <br>
+        Seb Hultura - diga a ele que foi Otto Bilendrock.) <br>
+        Fale com o novo suspeito <br>
+        Fale com Saré Josney novamente [-47,44](Você pode contar a verdade ou mentir. Ambas as repostas concluirão a
+        missão.) <br>
+
+    </div>
+    <button id="atelogo1" class="start" onclick="Mudarestado('atelogo')">É Apenas um "Até Logo"</button> <br>
+
+    <div id="atelogo">
+        <h4>É Apenas um "Até Logo"</h4>
+        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia. <br>
+    </div>
+    <button id="Boascontas1" class="start" onclick="Mudarestado('Boascontas')">As Boas Contas Fazem os Bons Amigos</button>
+    <br>
+
+    <div id="Boascontas">
+
+        Items a comprar para a missão: <br>
+        <ul>
+
+            <li>Pedra Negra de Vulkânia </li>
+            <li>Estatueta de Kaska </li>
+            <li>Relíquia do Cemitério O Sossego </li>
+        </ul>
+        Fale com Bo Peye em [-51,45] na Praia de Bronze. <br>
+        Fale com: Piki [-44,44] <br>
+        Fale com: Juju [-44,44] <br>
+        Fale com: G.O. Cébero [-51,40](jogar-se aos pes) <br>
+        Fale com: G.O. Logia [-52,37](Entregue 1 Pedra Negra de Vulkânia para que ela fale seu peso.) <br>
+        Fale com: Nevark, o Caçador [-47,42](Entregue 1 Estatueta de Kaska para que ele fale seu peso.) <br>
+        Fale com: Dina Tapio [-46,44] <br>
+        Fale com: Seb Hultura [-53,40](Responda "O dobro do triplo dividido por seis vezes o meu peso" e entregue 1
+        Relíquia do Cemitério O Sossego para que ele fale seu peso.) <br>
+        Fale com: Bo Peye novamente [-51,45] <br>
+        Selecione os três NPCs cuja soma dos pesos seja igual a 215. Clique duas vezes no item Folha de Anotações para
+        consultar os pesos dos NPCs. Os valores mudam toda semana. <br>
+    </div>
+    <br>
+    <p>Piki <input type="text" name="Piki" id="piki"></p>
+
+    <p>Juju <input type="text" name="Juju" id="juju"></p>
+
+    <p>G.O.C <input type="text" name="G.O.C" id="goc"></p>
+
+    <p>G.O.L <input type="text" name="G.O.L" id="gol"></p>
+
+    <p>Nevark <input type="text" name="Nevark" id="nevark"></p>
+
+    <p>dina <input type="text" name="dina" id="dina"></p>
+
+    <p>Seb <input type="text" name="Seb" id="seb"></p>
+
+    <input type="button" value="calculate" onclick="calcular()">
+    <br>
+
+    <span>posições do Gluxur</span>
+    <br>
+    <button id="Gluxur1" class="Gluxur" onclick="travelmount('-34,-83');help(1,'Gluxur');">1</button>
+    <button id="Gluxur2" class="Gluxur" onclick="travelmount('-35,-83');help(2,'Gluxur');">2</button>
+    <button id="Gluxur3" class="Gluxur" onclick="travelmount('-38,-84');help(3,'Gluxur');">3</button>
+    <button id="Gluxur4" class="Gluxur" onclick="travelmount('-39,-85');help(4,'Gluxur');">4</button>
+    <br>
+    <span>posições do Glupanar</span>
+    <br>
+    <button id="Glupanar1" class="Glupanar" onclick="travelmount('-38,-92');help(1,'Glupanar');">1</button>
+    <button id="Glupanar2" class="Glupanar" onclick="travelmount('-36,-93');help(2,'Glupanar');">2</button>
+    <button id="Glupanar3" class="Glupanar" onclick="travelmount('-33,-93');help(3,'Glupanar');">3</button>
+    <br>
+    <span>posições do Glubrik</span>
+    <br>
+    <button id="Glubrik1" class="Glubrik" onclick="travelmount('-29,-86');help(1,'Glubrik');">1</button>
+    <button id="Glubrik2" class="Glubrik" onclick="travelmount('-28,-89');help(2,'Glubrik');">2</button>
+    <button id="Glubrik3" class="Glubrik" onclick="travelmount('-30,-85');help(3,'Glubrik');">3</button>
+    <br>
+    <button id="clear" class="diarias" onclick="limpar(1);">Clear</button>
+    <br>
+    <img src="localisationdespnjs-fix498648_orig.png" height="250px" alt="mapadofus">
+    <br>
+    <span>Diarias:</span>
+    <br>
+    <button id="myInput" class="start" onclick="travelmount('-32,-86','0')">Aceitar diarias</button>
+    <br>
+    <button id="diarias1" class="diarias" onclick="travelmount('-28,-88');help(1,'diarias');">Glugubre</button>
+    <button id="diarias2" class="diarias" onclick="travelmount('-33,-91');help(2,'diarias');">Redolph</button>
+    <button id="diarias3" class="diarias" onclick="travelmount('-37,-87');help(3,'diarias');">laku karatcha</button>
+    <button id="diarias4" class="diarias" onclick="travelmount('-35,-89');help(4,'diarias');">Oogie Betty</button>
+    <br>
+    <button id="diarias5" class="diarias" onclick="travelmount('4,0');help(5,'diarias');">Felix</button>
+    <br>
+    <button id="clear" class="diarias" onclick="limpar(2);">Clear</button>
+    <br>
+    <button id="magos" class="magos" onclick="travelmount('-31,-88');">Gas Paw</button>
+    <button id="magos" class="magos" onclick="travelmount('-37,-86');">Balt azaw</button>
+    <button id="magos" class="magos" onclick="travelmount('-34,-92');">Mel Chiow</button>
+    <br>
+    <span id="copy"> </span>
+    <script>
+        function calcular() {
+            let piki = parseInt(document.getElementById("piki").value);
+            let juju = parseInt(document.getElementById("juju").value);
+            let goc = parseInt(document.getElementById("goc").value);
+            let gol = parseInt(document.getElementById("gol").value);
+            let nevark = parseInt(document.getElementById("nevark").value);
+            let dina = parseInt(document.getElementById("dina").value);
+            let seb = parseInt(document.getElementById("seb").value);
+            let pesos = [piki, juju, goc, gol, nevark, dina, seb];
+            let nomes = ['Piki', 'Juju', 'G.O.C', 'G.O.L', 'Nevark', 'dina', 'Seb'];
+            for (let index1 = 0; index1 <= 6; index1++) {
+                for (let index2 = 0; index2 <= 6; index2++) {
+                    for (let index3 = 0; index3 <= 6; index3++) {
+                        if (index1 !== index2 && index2 !== index3 && index1 !== index3) {
+                            if (pesos[index1] + pesos[index2] + pesos[index3] == 215) {
+                                document.getElementById("copy").textContent = nomes[index1] + pesos[index1] + '+' + nomes[index2] + pesos[index2] + '+' + nomes[index3] + pesos[index3];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        function Mudarestado(el) {
+            var teste = el + "1";
+            
+
+            var display = document.getElementById(el).style.display;
+            if (display == "block") {
+                document.getElementById(el).style.display = 'none';
+                  document.getElementById(teste).style.border = "3px double black";
+            } else {
+                document.getElementById(el).style.display = 'block'
+                document.getElementById(teste).style.border = "5px solid blue";
+            }
+        }
+
+        function travelmount(value, nr) {
+
+            var copyText = value
+
+            navigator.clipboard.writeText('/travel ' + value);
+
+            //alert("Copied the text: " + value);
+            document.getElementById("copy").textContent = '/travel ' + value;
+        }
+        function help(nr, identificador) {
+            //document.getElementById("copy").textContent=identificador+nr;
+            document.getElementById(identificador + nr).style.border = "5px solid orange";
+            //document.getElementById(identificador+nr).style.color(red);
+        }
+        function limpar(identificador) {
+            //document.getElementById("copy").textContent=identificador;
+            if (identificador == 2) {
+                document.getElementById('diarias1').style.border = "5px double white";
+                document.getElementById('diarias2').style.border = "5px double white";
+                document.getElementById('diarias3').style.border = "5px double white";
+                document.getElementById('diarias4').style.border = "5px double white";
+                document.getElementById('diarias5').style.border = "5px double white";
+            } else {
+                document.getElementById('Glubrik1').style.border = "5px double white";
+                document.getElementById('Glubrik2').style.border = "5px double white";
+                document.getElementById('Glubrik3').style.border = "5px double white";
+                document.getElementById('Gluxur1').style.border = "5px double white";
+                document.getElementById('Gluxur2').style.border = "5px double white";
+                document.getElementById('Gluxur3').style.border = "5px double white";
+                document.getElementById('Gluxur4').style.border = "5px double white";
+                document.getElementById('Glupanar1').style.border = "5px double white";
+                document.getElementById('Glupanar2').style.border = "5px double white";
+                document.getElementById('Glupanar3').style.border = "5px double white";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

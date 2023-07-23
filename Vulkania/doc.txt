@@ -1,0 +1,179 @@
+Antes de tudo!
+    Recomendado pegar o Zaap porto de madrestam 7,-4
+    Barco para o arquipelago de Vulkania 8,-5
+    
+    Selo Sazonal
+    {
+    Primeiro Contato
+    Fale com: Betty Boob [-48,44]
+
+    Aventura na Terra
+    Fale com Betty Boob em [-48,44] no Vilarejo de Vulkania ao final da missão Primeiro Contato.
+    Descubra o mapa: Praia de Bronze [-50,45]
+    Descubra o mapa: Cratera Bdela [-50,42]
+    Descubra o mapa: Praia da Prancha [-54,44]
+    Descubra o mapa: Ilha Zamodas [-57,46]
+    Descubra o mapa: Cemitério O Sossego [-53,40]
+    Descubra o mapa: Cratera Fosa [-55,39]
+    Descubra o mapa: Cratera Toide [-52,37]
+    Descubra o mapa: Cratera Peuta [-49,40]
+    Descubra o mapa: Cratera Baite [-51,40]
+    Descubra o mapa: Bar Akuda [-44,44]
+    Fale com: Betty Boob novamente [-48,44]
+    
+    Encontro de Verão/Colheita Estival
+    Fale com Tomas Cuki em [-49,44] no Vilarejo de Vulkânia.   --Você deve obter no mínimo 80 pontos durante a atividade "Coleta de Conchas"   (depois meter mais detalhes https://dofus.fandom.com/pt-br/wiki/Encontro_de_Verão)
+    
+    Cratera da Admissão
+    Fale com Matt Hemático em [-50,44] no Vilarejo de Vulkânia.
+    Cabeça - No primeiro mapa de qualquer cratera, exceto a Cratera Baite. [-49,40], [-50,42], [-52,37] ou [-55,39]. Clique no cristal no primeiro mapa dentro da cratera.
+    Corpo [-53,40] - Clique na alavanca ao lado direito da casa.
+    Braço esquerdo [-49,47] - Vá para [-49,45], fale com A.P.A.T. Clauman e vá para Pontomai. Clique na bandeira.
+    Braço direito [-54,34] - Vá para [-54,38], fale com A.P.A.T. Tobe e vá para Vulkorog. Clique na bandeira.
+    Perna esquerda [-55,42] - Clique na árvore.
+    Perna direita [-48,40] - Entre na cabana e clique no saco com laranjas.
+    Leve as seis peças do totem para Matt Hemático [-50,44]
+    Entregue a G.O. Cébero: 1x Totem Erário [-51,40]
+
+    Caça às Kaskas
+    Fale com Nevark, o Caçador em [-47,42] no Vilarejo de Vulkânia.
+    Coletar 30 Línguas de Kaska e levá-las para Nevark, o Caçador [-47,42] 
+
+    Farpa Vulkaniana
+    Fale com Azule Jaria em [-51,40] dentro da Cratera Baite.
+    }
+
+    Um Inquérito Alambicado - Investigação{
+    Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia.
+
+    Colete uma amostra de Suze McGraff (Scarlet Richter)
+     Inicie e conclua a missão A Pobre Scarlet Perdeu seu Miaw.
+      [Fale com Scarlet Richter em [-45,45] no Farol Feyro depois de ter iniciado a missão Um Inquérito Alambicado - Investigação.
+      Fale com: Otto Bilendrock [-48,44]
+      Fale com: Nevark, o Caçador [-47,42]
+      Encontre o Dekster(Dekster está dentro de um barril em [-57,46]. Vá em [-55,44] e fale com A.P.A.T. Mamadu para ter acesso à ilha.)
+      Fale com Scarlet Richter novamente [-45,45]
+      Derrote 1x Cacamundongo Turista em um único combate
+      Pegue o Dekster [-57,46](Clique no barril.)
+      Entregue a Scarlet Richter: 1x Dekster, o Miaw [-45,45]
+      ]
+
+    Colete uma amostra do Professor Ivan Harvtvigg (Otto Bilendrock)
+     Inicie e conclua a missão Memórias Perdidas.
+     [Fale com Otto Bilendrock em [-48,44] dentro da sua loja no Vilarejo de Vulkânia depois de ter iniciado a missão Um Inquérito Alambicado - Investigação.
+     Fale com Matt Hemático em [-50,44].
+     Leia a nota na entrada da Cratera Baite em [-51,40].
+     Fale com Dina Tapio [-46,44].
+     Fale com Capitã Jeine Wey em [-48,44].
+     Fale com Otto Bilendrock novamente [-48,44]
+     Peça uma amostra ao Otto Bilendrock [-48,44]
+     ]
+
+
+     Colete uma amostra de Stak
+     Inicie e conclua a missão Como Você Preenche um Buraco?.
+     [Fale com Stak em [-55,43] na Praia da Prancha depois de ter iniciado a missão Um Inquérito Alambicado - Investigação.
+     Colete Chiclete Sinuoso na Floresta Traktopel.(Equipe as Luvas Masticator e clique na árvore em [-51,42] ou [-52,44].)
+     Colete Chiclete Sinuoso na Floresta Spartania.(Equipe as Luvas Masticator e clique na árvore em [-54,40] ou [-55,42].)
+     Colete Chiclete Sinuoso na Floresta Stratigra.(Equipe as Luvas Masticator e clique na árvore em [-51,39] ou [-52,38].)
+     Encontre uma Pedra-pomes(Clique na pedra em [-49,41] ou [-50,40].)
+     Fale com Stak novamente [-55,43]
+     Peça uma amostra ao Stak
+     ]
+
+
+    Colete uma amostra de Stok
+     Inicie e conclua a missão Precisa de Mais Sal!.
+     [Fale com Stok em [-50,45] na Praia do Bronze depois de ter iniciado a missão Um Inquérito Alambicado - Investigação.
+     Encontre Cristais de Sal de Bah
+     Encontre Cristais de Sal de Verão
+     Encontre Cristais de Sal de Alyda
+     Os cristais de sal podem ser encontrados na Ilha Sem Nome. Vá até [-49,36] e fale com A.P.A.T. Maripa para ter acesso à ilha. Certifique-se de que coletou os três tipos de cristais.
+     /travel -46,44 e use o A.P.A.T. E depois Use o moedor de sal [-44,44](Clique no moedor no lado direito da entrada do Bar Akuda.)
+     Fale com Stok novamente [-50,45]
+     Fale com: Stak [-55,43]
+     Peça um Coquetel Abrasivo a Juju [-44,44]
+     Conserte o moedor de sal [-44,44]
+     Triture os Cristais de Sal [-44,44]
+     Fale com Stok novamente [-50,45]
+     Peça uma amostra ao Stok [-50,45]
+     ]
+
+    Colete uma amostra de Tom Stone (Seb Hultura)
+     Inicie e conclua a missão A Técnica das Placas.
+     [Fale com Seb Hultura em [-53,40] no Cemitério O Sossego depois de ter iniciado a missão Um Inquérito Alambicado - Investigação.
+     Leia a inscrição da primeira tumba [-55,40]
+     Leia a inscrição da segunda tumba [-56,40]
+     Leia a inscrição da terceira tumba [-56,41]
+     Leia a inscrição da quarta tumba [-56,41]
+     Leia a inscrição da quinta tumba [-55,41]
+     Leia a inscrição da sexta tumba [-56,41]
+     Fale com Seb Hultura novamente [-53,40]
+       Você precisa dar respostas corretas para Seb Hultura. A ordem das respostas são:
+        1. Frisby Bufê
+        2. Joel Tribiano
+        3. Harmonika Gueli
+        4. Chanduló Bong
+        5. Ruço Gueli
+        6. Rochelle Grill
+     ]
+
+    Leve as amostras de volta para Tony Bleurgh (Saré Josney)  [-47,44]
+    }
+
+    Um Inquérito Alambicado - Identificação{
+        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado - Investigação.
+        Descubra o mapa: Barnacabin de Saré Josney(Entre na casa atrás de Saré Josney.)
+        Fale com: Saré Josney [-47,44]
+        Complete a análise do DIC usando a destilaria [-47,44](Clique no alambique dentro da casa.)
+        Fale com Saré Josney novamente [-47,44](Na última parte do diálogo você será informado com qual NPC falar para a próxima etapa. O suspeito será escolhido aleatoriamente.)
+    }
+
+    Um Inquérito Alambicado - Confronto{
+        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado - Identificação.
+        Consiga uma confissão do culpado identificado pelo DIC(Fale com o NPC que Saré Josney lhe deu na missão anterior. Se não lembrar, consulte o item de missão Conclusão da DIC.)
+        Fale com Saré Josney novamente [-47,44]
+        Você precisar dar ao Saré Josney o nome do novo suspeito, que depende do primeiro suspeito. Se o seu primeiro suspeito foi:
+        Scarlet Richter - diga a ele que foi Seb Hultura.
+        Otto Bilendrock - diga a ele que foi Scarlet Richter.
+        Stok - diga a ele que foi Stak.
+        Stak - diga a ele que foi Stok.
+        Seb Hultura - diga a ele que foi Otto Bilendrock.
+        
+    }
+
+    Um Inquérito Alambicado - Resolução{
+        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado - Confronto.
+        Fale com: Saré Josney [-47,44](
+            Você precisa dar ao Saré Josney o nome do novo suspeito, que depende de quem foi o primeiro suspeito. Se o seu primeiro suspeito foi:
+            Scarlet Richter - diga a ele que foi Seb Hultura.
+            Otto Bilendrock - diga a ele que foi Scarlet Richter.
+            Stok - diga a ele que foi Stak.
+            Stak - diga a ele que foi Stok.
+            Seb Hultura - diga a ele que foi Otto Bilendrock.)
+        Fale com o novo suspeito
+        Fale com Saré Josney novamente [-47,44](Você pode contar a verdade ou mentir. Ambas as repostas concluirão a missão.)
+    }
+
+    É Apenas um "Até Logo"{
+        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia.
+    }
+
+    As Boas Contas Fazem os Bons Amigos{
+        Items a comprar para a missão:
+            Pedra Negra de Vulkânia
+            Estatueta de Kaska
+            Relíquia do Cemitério O Sossego
+
+        Fale com Bo Peye em [-51,45] na Praia de Bronze.
+        Fale com: Piki [-44,44]
+        Fale com: Juju [-44,44]
+        Fale com: G.O. Cébero [-51,40](jogar-se aos pes)
+        Fale com: G.O. Logia [-52,37](Entregue 1 Pedra Negra de Vulkânia para que ela fale seu peso.)
+        Fale com: Nevark, o Caçador [-47,42](Entregue 1 Estatueta de Kaska para que ele fale seu peso.)
+        Fale com: Dina Tapio [-46,44]
+        Fale com: Seb Hultura [-53,40](Responda "O dobro do triplo dividido por seis vezes o meu peso" e entregue 1 Relíquia do Cemitério O Sossego para que ele fale seu peso.)
+        Fale com: Bo Peye novamente [-51,45]
+        Selecione os três NPCs cuja soma dos pesos seja igual a 215. Clique duas vezes no item Folha de Anotações para consultar os pesos dos NPCs. Os valores mudam toda semana.
+
+    }
