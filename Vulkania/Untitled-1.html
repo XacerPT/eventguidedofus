@@ -27,31 +27,13 @@
 
         }
 
-        .Glubrik {
-            background-color: red;
-            color: white;
-            border: white;
-            border: 5px double white;
-        }
-
-        .Gluxur {
-            background-color: blue;
-            color: white;
-            border: 5px double white;
-        }
-
-        .Glupanar {
-            background-color: green;
-            color: white;
-            border: 5px double white;
-        }
-
-
-        .diarias {
+        .personagens {
             background-color: gray;
             color: white;
-            border-style: double;
-            width: 110px;
+            border: 5px double white;
+            height: auto + 10px;
+            width: auto;
+            display: inline-block;
         }
 
         #selosazonal {
@@ -81,283 +63,330 @@
         #Boascontas {
             display: none;
         }
-        #aventuraterra{
+
+        #aventuraterra {
             display: none;
-}
-#primeirocontato{
+        }
+
+        #primeirocontato {
             display: none;
-}
-#colheitaestival{
+        }
+
+        #colheitaestival {
             display: none;
-}#Crateraadmissao{
+        }
+
+        #Crateraadmissao {
             display: none;
-}#CacaKaskas{
+        }
+
+        #CacaKaskas {
             display: none;
-}#Farpavulkaniana{
+        }
+
+        #Farpavulkaniana {
             display: none;
-}
+        }
+
+        #Perdeumiaw {
+            display: none;
+        }
+
+        #Memoriasperdidas {
+            display: none;
+        }
+
+        #Preencheburaco {
+            display: none;
+        }
+
+        #Precisasal {
+            display: none;
+        }
+
+        #Tecnicaplacas {
+            display: none;
+        }
 
         p {
             display: inline-block;
         }
+
         /* Customize the label (the container) */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 2px;
-  padding-top: 5px;
-  cursor: pointer;
-  /* font-size: 22px; */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 2px;
+            padding-top: 5px;
+            cursor: pointer;
+            /* font-size: 22px; */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
 
-/* Hide the browser's default checkbox */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
+        /* Hide the browser's default checkbox */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
 
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
+        /* Create a custom checkbox */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+        }
 
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
+        /* On mouse-over, add a grey background color */
+        .container:hover input~.checkmark {
+            background-color: #ccc;
+        }
 
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
+        /* When the checkbox is checked, add a blue background */
+        .container input:checked~.checkmark {
+            background-color: #2196F3;
+        }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
 
-/* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
+        /* Show the checkmark when checked */
+        .container input:checked~.checkmark:after {
+            display: block;
+        }
 
-/* Style the checkmark/indicator */
-.container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-div{
-    padding-left: 1em;
-}
+        /* Style the checkmark/indicator */
+        .container .checkmark:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
 
+        div {
+            padding-left: 1em;
+        }
     </style>
-    <h2>Antes de tudo!</h2>
+    <h2>Guia de ajuda da ilha de vulkania!</h2>
 
     <button id="myInput" class="start" onclick="travelmount('7,-4','0')" title="7,-4">Recomendado pegar o Zaap porto de
         madrestam</button> <br>
     <button id="myInput" class="start" onclick="travelmount('8,-5','0')" title="8,-5">Barco para o arquipelago de
         Vulkania</button>
-    <br>
+
     <div>
+        <p>caso precisem da posiçao de algum npc estao aqui as suas posiçoes!(inclui a posiçao para a dg nesta secçao)
+        </p>
 
+        <button id="scarlet" class="personagens" onclick="travelmount('-45,45');" title="-45,45">Scarlet
+            Richter</button>
+        <button id="Otto" class="personagens" onclick="travelmount('-48,44');" title="-48,44">Otto Bilendrock</button>
+        <button id="Stok" class="personagens" onclick="travelmount('-50,45');" title="-50,45">Stok</button>
+        <button id="Stak" class="personagens" onclick="travelmount('-55,43');" title="-55,43">Stak</button>
+        <button id="Seb" class="personagens" onclick="travelmount('-53,40');" title="-53,40">Seb Hultura</button>
+        <button id="dg" class="personagens" onclick="travelmount('-51,40');" title="-51,40">Entrada para a dg diaria de
+            Vulkania</button>
 
-        <br>
     </div>
     <button id="selosazonal1" class="start" onclick="Mudarestado('selosazonal')">Selo Sazonal</button> <br>
 
     <div id="selosazonal">
-        <button id="primeirocontato1" class="start" onclick="Mudarestado('primeirocontato')">Primeiro Contato</button> <br>
+        <button id="primeirocontato1" class="start" onclick="Mudarestado('primeirocontato')">Primeiro Contato</button>
+        <br>
         <div id="primeirocontato">
-            
+
             <label class="container" onclick="travelmount('-48,44')">
-                <input type="checkbox"> 
+                <input type="checkbox">
                 Fale com: Betty Boob [-48,44]
-               <span class="checkmark"></span>
-             </label>
-            
+                <span class="checkmark"></span>
+            </label>
+
         </div>
 
         <button id="aventuraterra1" class="start" onclick="Mudarestado('aventuraterra')">Aventura na Terra</button> <br>
         <div id="aventuraterra">
-            
+
             <label class="container" onclick="travelmount('-48,44')">
-                 <input type="checkbox"> 
+                <input type="checkbox">
                 Fale com Betty Boob em [-48,44] no Vilarejo de Vulkania ao final da missão Primeiro Contato.
                 <span class="checkmark"></span>
-              </label>
-              <label class="container" onclick="travelmount('-50,45')">
-                <input type="checkbox"> 
+            </label>
+            <label class="container" onclick="travelmount('-50,45')">
+                <input type="checkbox">
                 Descubra o mapa: Praia de Bronze [-50,45]
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-50,42')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-50,42')">
+                <input type="checkbox">
                 Descubra o mapa: Cratera Bdela [-50,42]
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-54,44')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-54,44')">
+                <input type="checkbox">
                 Descubra o mapa: Praia da Prancha [-54,44]
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-57,46')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-57,46')">
+                <input type="checkbox">
                 Descubra o mapa: Ilha Zamodas [-57,46]
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-53,40')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-53,40')">
+                <input type="checkbox">
                 Descubra o mapa: Cemitério O Sossego [-53,40]
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-55,39')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-55,39')">
+                <input type="checkbox">
                 Descubra o mapa: Cratera Fosa [-55,39]
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-52,37')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-52,37')">
+                <input type="checkbox">
                 Descubra o mapa: Cratera Toide [-52,37]
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-49,40')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-49,40')">
+                <input type="checkbox">
                 Descubra o mapa: Cratera Peuta [-49,40]
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-51,40')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-51,40')">
+                <input type="checkbox">
                 Descubra o mapa: Cratera Baite [-51,40]
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-44,44')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-44,44')">
+                <input type="checkbox">
                 Descubra o mapa: Bar Akuda [-44,44]
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-48,44')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-48,44')">
+                <input type="checkbox">
                 Fale com: Betty Boob novamente [-48,44]
-               <span class="checkmark"></span>
-             </label>
-            
-            
-        </div>
-        <button id="colheitaestival1" class="start" onclick="Mudarestado('colheitaestival')">Encontro de Verão/Colheita Estival</button> <br>
-        <div id="colheitaestival">
-            <label class="container" onclick="travelmount('-49,44')">
-                <input type="checkbox"> 
-                Fale com Tomas Cuki em [-49,44] no Vilarejo de Vulkânia. --Você deve obter no mínimo 80 pontos durante a
-            atividade "Coleta de Conchas" (depois meter mais detalhes
-            https://dofus.fandom.com/pt-br/wiki/Encontro_de_Verão)
-               <span class="checkmark"></span>
-             </label>
-            
+                <span class="checkmark"></span>
+            </label>
+
 
         </div>
-        <button id="Crateraadmissao1" class="start" onclick="Mudarestado('Crateraadmissao')">Cratera da Admissão</button> <br>
+        <button id="colheitaestival1" class="start" onclick="Mudarestado('colheitaestival')">Encontro de Verão/Colheita
+            Estival</button> <br>
+        <div id="colheitaestival">
+            <label class="container" onclick="travelmount('-49,44')">
+                <input type="checkbox">
+                Fale com Tomas Cuki em [-49,44] no Vilarejo de Vulkânia. --Você deve obter no mínimo 80 pontos durante a
+                atividade "Coleta de Conchas" (depois meter mais detalhes
+                https://dofus.fandom.com/pt-br/wiki/Encontro_de_Verão)
+                <span class="checkmark"></span>
+            </label>
+
+
+        </div>
+        <button id="Crateraadmissao1" class="start" onclick="Mudarestado('Crateraadmissao')">Cratera da
+            Admissão</button> <br>
         <div id="Crateraadmissao">
             <label class="container" onclick="travelmount('-50,44')">
-                <input type="checkbox"> 
+                <input type="checkbox">
                 Fale com Matt Hemático em [-50,44] no Vilarejo de Vulkânia.
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="pegaUmQualquer('-49,40','-50,42','-52,37','-55,39')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="pegaUmQualquer('-49,40','-50,42','-52,37','-55,39')">
+                <input type="checkbox">
                 Cabeça - No primeiro mapa de qualquer cratera, exceto a Cratera Baite. [-49,40], [-50,42], [-52,37] ou
-            [-55,39]. Clique no cristal no primeiro mapa dentro da cratera.
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-53,40')">
-                <input type="checkbox"> 
+                [-55,39]. Clique no cristal no primeiro mapa dentro da cratera.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-53,40')">
+                <input type="checkbox">
                 Corpo [-53,40] - Clique na alavanca ao lado direito da casa.
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-49,45')">
-                <input type="checkbox"> 
-                Vá para [-49,45], fale com A.P.A.T. Clauman e vá para Pontomai. 
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-49,47')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-49,45')">
+                <input type="checkbox">
+                Vá para [-49,45], fale com A.P.A.T. Clauman e vá para Pontomai.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-49,47')">
+                <input type="checkbox">
                 Braço esquerdo [-49,47] em Pontomai. Clique na bandeira.
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-54,38')">
-                <input type="checkbox"> 
-                Vá para [-54,38], fale com A.P.A.T. Tobe e vá para Vulkorog. 
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-54,34')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-54,38')">
+                <input type="checkbox">
+                Vá para [-54,38], fale com A.P.A.T. Tobe e vá para Vulkorog.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-54,34')">
+                <input type="checkbox">
                 Braço direito [-54,34] em Vulkorog. Clique na bandeira.
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-55,42')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-55,42')">
+                <input type="checkbox">
                 Perna esquerda [-55,42] - Clique na árvore.
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-48,40')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-48,40')">
+                <input type="checkbox">
                 Perna direita [-48,40] - Entre na cabana e clique no saco com laranjas.
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-50,44')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-50,44')">
+                <input type="checkbox">
                 Leve as seis peças do totem para Matt Hemático [-50,44]
-               <span class="checkmark"></span>
-             </label>
-             <label class="container" onclick="travelmount('-51,40')">
-                <input type="checkbox"> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-51,40')">
+                <input type="checkbox">
                 Entregue a G.O. Cébero: 1x Totem Erário [-51,40]
-               <span class="checkmark"></span>
-             </label>
-            
-            
+                <span class="checkmark"></span>
+            </label>
+
+
         </div>
         <button id="CacaKaskas1" class="start" onclick="Mudarestado('CacaKaskas')">Caça às Kaskas</button> <br>
         <div id="CacaKaskas">
-            <label class="container" onclick="travelmount('-47,42')" title="Coletar 30 Línguas de Kaska e levá-las para Nevark, o Caçador [-47,42] (obtem-se as linguas de kaska a matar kaskas correspondentes ao seu nivel de personagem)">
-                <input type="checkbox"> 
-                Fale com Nevark, o Caçador em [-47,42] no Vilarejo de Vulkânia e depois colete 30 linguas de kaska e entregue-as.
-               <span class="checkmark"></span>
-             </label>
-             
-            
+            <label class="container" onclick="travelmount('-47,42')"
+                title="Coletar 30 Línguas de Kaska e levá-las para Nevark, o Caçador [-47,42] (obtem-se as linguas de kaska a matar kaskas correspondentes ao seu nivel de personagem)">
+                <input type="checkbox">
+                Fale com Nevark, o Caçador em [-47,42] no Vilarejo de Vulkânia e depois colete 30 linguas de kaska e
+                entregue-as.
+                <span class="checkmark"></span>
+            </label>
+
+
 
         </div>
-        <button id="Farpavulkaniana1" class="start" onclick="Mudarestado('Farpavulkaniana')">Farpa Vulkaniana</button> <br>
+        <button id="Farpavulkaniana1" class="start" onclick="Mudarestado('Farpavulkaniana')">Farpa Vulkaniana</button>
+        <br>
         <div id="Farpavulkaniana">
-            <label class="container" onclick="travelmount('-51,40')" title="Derrote 20x Kaska Venerável Crua dentro da Cratera correspondente ao seu nivel.">
-                <input type="checkbox"> 
-                Fale com Azule Jaria em [-51,40] dentro da Cratera Baite e depois derrote 20 Kaska Venerável Crua e conclua a missão.
-               <span class="checkmark"></span>
-             </label>
-            
-            
+            <label class="container" onclick="travelmount('-51,40')"
+                title="Derrote 20x Kaska Venerável Crua dentro da Cratera correspondente ao seu nivel.">
+                <input type="checkbox">
+                Fale com Azule Jaria em [-51,40] dentro da Cratera Baite e depois derrote 20 Kaska Venerável Crua e
+                conclua a missão.
+                <span class="checkmark"></span>
+            </label>
+
+
 
         </div>
 
@@ -368,98 +397,299 @@ div{
         Investigação</button> <br>
 
     <div id="Inqueritoinvestiga">
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia.
+            <span class="checkmark"></span>
+        </label>
 
-        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia. <br>
 
-        Colete uma amostra de Suze McGraff (Scarlet Richter) <br>
+        <button id="Perdeumiaw1" class="start" onclick="Mudarestado('Perdeumiaw')">Colete uma amostra de Suze McGraff
+            (Scarlet Richter)</button> <br>
+
         <div id="Perdeumiaw">
 
             <h4>Inicie e conclua a missão A Pobre Scarlet Perdeu seu Miaw.</h4>
-            Fale com Scarlet Richter em [-45,45] no Farol Feyro depois de ter iniciado a missão Um Inquérito Alambicado
-            - Investigação. <br>
-            Fale com: Otto Bilendrock [-48,44] <br>
-            Fale com: Nevark, o Caçador [-47,42] <br>
-            Encontre o Dekster(Dekster está dentro de um barril em [-57,46]. Vá em [-55,44] e fale com A.P.A.T. Mamadu
-            para ter acesso à ilha.) <br>
-            Fale com Scarlet Richter novamente [-45,45] <br>
-            Derrote 1x Cacamundongo Turista em um único combate <br>
-            Pegue o Dekster [-57,46](Clique no barril.) <br>
-            Entregue a Scarlet Richter: 1x Dekster, o Miaw [-45,45] <br>
+            <label class="container" onclick="travelmount('-45,45')">
+                <input type="checkbox">
+                Fale com Scarlet Richter em [-45,45] no Farol Feyro depois de ter iniciado a missão Um Inquérito
+                Alambicado
+                - Investigação.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-48,44')">
+                <input type="checkbox">
+                Fale com: Otto Bilendrock [-48,44]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-47,42')">
+                <input type="checkbox">
+                Fale com: Nevark, o Caçador [-47,42]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-55,44')">
+                <input type="checkbox">
+                Vá em [-55,44] e fale com A.P.A.T. Mamadu para ter acesso à ilha onde dekster se encontra.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-57,46')">
+                <input type="checkbox">
+                Encontre o Dekster(Dekster está dentro de um barril em [-57,46].)
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-45,45')">
+                <input type="checkbox">
+                Fale com Scarlet Richter novamente [-45,45]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-45,45')">
+                <input type="checkbox">
+                Derrote 1x Cacamundongo Turista em um único combate
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-55,44')">
+                <input type="checkbox">
+                Vá em [-55,44] e fale com A.P.A.T. Mamadu para ter acesso à ilha onde dekster se encontra.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-57,46')">
+                <input type="checkbox">
+                Pegue o Dekster [-57,46](Clique no barril.)
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-45,45')">
+                <input type="checkbox">
+                Entregue a Scarlet Richter: 1x Dekster, o Miaw [-45,45]
+                <span class="checkmark"></span>
+            </label>
+
 
         </div>
+        <button id="Memoriasperdidas1" class="start" onclick="Mudarestado('Memoriasperdidas')">Colete uma amostra do
+            Professor Ivan Harvtvigg (Otto Bilendrock)</button> <br>
 
-        Colete uma amostra do Professor Ivan Harvtvigg (Otto Bilendrock) <br>
         <div id="Memoriasperdidas">
             <h4>Inicie e conclua a missão Memórias Perdidas.</h4>
-            Fale com Otto Bilendrock em [-48,44] dentro da sua loja no Vilarejo de Vulkânia depois de ter iniciado a
-            missão Um Inquérito Alambicado - Investigação. <br>
-            Fale com Matt Hemático em [-50,44]. <br>
-            Leia a nota na entrada da Cratera Baite em [-51,40]. <br>
-            Fale com Dina Tapio [-46,44]. <br>
-            Fale com Capitã Jeine Wey em [-48,44]. <br>
-            Fale com Otto Bilendrock novamente [-48,44] <br>
-            Peça uma amostra ao Otto Bilendrock [-48,44] <br>
+            <label class="container" onclick="travelmount('-48,44')">
+                <input type="checkbox">
+                Fale com Otto Bilendrock em [-48,44] dentro da sua loja no Vilarejo de Vulkânia depois de ter iniciado a
+                missão Um Inquérito Alambicado - Investigação.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-50,44')">
+                <input type="checkbox">
+                Fale com Matt Hemático em [-50,44].
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-51,40')">
+                <input type="checkbox">
+                Leia a nota na entrada da Cratera Baite em [-51,40].
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-46,44')">
+                <input type="checkbox">
+                Fale com Dina Tapio [-46,44].
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-48,44')">
+                <input type="checkbox">
+                Fale com Capitã Jeine Wey em [-48,44].
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-48,44')">
+                <input type="checkbox">
+                Fale com Otto Bilendrock novamente [-48,44]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-48,44')">
+                <input type="checkbox">
+                Peça uma amostra ao Otto Bilendrock [-48,44]
+                <span class="checkmark"></span>
+            </label>
+
+
 
 
         </div>
+        <button id="Preencheburaco1" class="start" onclick="Mudarestado('Preencheburaco')">Colete uma amostra de
+            Stak</button> <br>
 
-        Colete uma amostra de Stak
 
         <div id="Preencheburaco">
 
             <h4>Inicie e conclua a missão Como Você Preenche um Buraco?.</h4>
-            Fale com Stak em [-55,43] na Praia da Prancha depois de ter iniciado a missão Um Inquérito Alambicado -
-            Investigação. <br>
-            Colete Chiclete Sinuoso na Floresta Traktopel.(Equipe as Luvas Masticator e clique na árvore em [-51,42] ou
-            [-52,44].) <br>
-            Colete Chiclete Sinuoso na Floresta Spartania.(Equipe as Luvas Masticator e clique na árvore em [-54,40] ou
-            [-55,42].) <br>
-            Colete Chiclete Sinuoso na Floresta Stratigra.(Equipe as Luvas Masticator e clique na árvore em [-51,39] ou
-            [-52,38].) <br>
-            Encontre uma Pedra-pomes(Clique na pedra em [-49,41] ou [-50,40].) <br>
-            Fale com Stak novamente [-55,43] <br>
-            Peça uma amostra ao Stak <br>
+            <label class="container" onclick="travelmount('-55,43')">
+                <input type="checkbox">
+                Fale com Stak em [-55,43] na Praia da Prancha depois de ter iniciado a missão Um Inquérito Alambicado -
+                Investigação.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="pegaUmQualquer('-51,42','-52,44')">
+                <input type="checkbox">
+                Colete Chiclete Sinuoso na Floresta Traktopel.(Equipe as Luvas Masticator e clique na árvore em [-51,42]
+                ou
+                [-52,44].)
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="pegaUmQualquer('-54,40','-55,42')">
+                <input type="checkbox">
+                Colete Chiclete Sinuoso na Floresta Spartania.(Equipe as Luvas Masticator e clique na árvore em [-54,40]
+                ou
+                [-55,42].)
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="pegaUmQualquer('-51,39','-52,38')">
+                <input type="checkbox">
+                Colete Chiclete Sinuoso na Floresta Stratigra.(Equipe as Luvas Masticator e clique na árvore em [-51,39]
+                ou
+                [-52,38].)
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="pegaUmQualquer('-49,41','-50,40')">
+                <input type="checkbox">
+                Encontre uma Pedra-pomes(Clique na pedra em [-49,41] ou [-50,40].)
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-55,43')">
+                <input type="checkbox">
+                Fale com Stak novamente [-55,43]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-55,43')">
+                <input type="checkbox">
+                Peça uma amostra ao Stak [-55,43]
+                <span class="checkmark"></span>
+            </label>
+
 
 
         </div>
+        <button id="Precisasal1" class="start" onclick="Mudarestado('Precisasal')">Colete uma amostra de Stok</button>
+        <br>
 
-        Colete uma amostra de Stok
 
         <div id="Precisasal">
 
             <h4>Inicie e conclua a missão Precisa de Mais Sal!.</h4>
-            Fale com Stok em [-50,45] na Praia do Bronze depois de ter iniciado a missão Um Inquérito Alambicado -
-            Investigação. <br>
-            Encontre Cristais de Sal de Bah <br>
-            Encontre Cristais de Sal de Verão <br>
-            Encontre Cristais de Sal de Alyda <br>
-            Os cristais de sal podem ser encontrados na Ilha Sem Nome. Vá até [-49,36] e fale com A.P.A.T. Maripa para
-            ter acesso à ilha. Certifique-se de que coletou os três tipos de cristais. <br>
-            /travel -46,44 e use o A.P.A.T. E depois Use o moedor de sal [-44,44](Clique no moedor no lado direito da
-            entrada do Bar Akuda.) <br>
-            Fale com Stok novamente [-50,45] <br>
-            Fale com: Stak [-55,43] <br>
-            Peça um Coquetel Abrasivo a Juju [-44,44] <br>
-            Conserte o moedor de sal [-44,44] <br>
-            Triture os Cristais de Sal [-44,44] <br>
-            Fale com Stok novamente [-50,45] <br>
-            Peça uma amostra ao Stok [-50,45] <br>
+            <label class="container" onclick="travelmount('-50,45')">
+                <input type="checkbox">
+                Fale com Stok em [-50,45] na Praia do Bronze depois de ter iniciado a missão Um Inquérito Alambicado -
+                Investigação.
+                <span class="checkmark"></span>
+            </label>
+            <ul>
+                <li> Encontre Cristais de Sal de Bah </li>
+                <li>Encontre Cristais de Sal de Verão</li>
+                <li> Encontre Cristais de Sal de Alyda </li>
+            </ul>
+            <label class="container" onclick="travelmount('-49,36')">
+                <input type="checkbox">
+                Vá até [-49,36] e fale com A.P.A.T. Maripa para ter acesso à ilha.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="checkbox">
+                Os cristais de sal podem ser encontrados na Ilha Sem Nome. Certifique-se de que coletou os três tipos de
+                cristais.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-46,44')">
+                <input type="checkbox">
+                Vá até [-46,44] e fale com A.P.A.T.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-44,44')">
+                <input type="checkbox">
+                Use o moedor de sal [-44,44](Clique no moedor no lado direito da entrada do Bar Akuda.)
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-50,45')">
+                <input type="checkbox">
+                Fale com Stok novamente [-50,45]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-55,43')">
+                <input type="checkbox">
+                Fale com: Stak [-55,43]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-44,44')">
+                <input type="checkbox">
+                Peça um Coquetel Abrasivo a Juju [-44,44]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-44,44')">
+                <input type="checkbox">
+                Conserte o moedor de sal [-44,44](Clique no moedor no lado direito da entrada do Bar Akuda.)
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-44,44')">
+                <input type="checkbox">
+                Triture os Cristais de Sal [-44,44]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-50,45')">
+                <input type="checkbox">
+                Fale com Stok novamente [-50,45]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-50,45')">
+                <input type="checkbox">
+                Peça uma amostra ao Stok [-50,45]
+                <span class="checkmark"></span>
+            </label>
+
 
         </div>
-        Colete uma amostra de Tom Stone (Seb Hultura)
+        <button id="Tecnicaplacas1" class="start" onclick="Mudarestado('Tecnicaplacas')">Colete uma amostra de Tom Stone
+            (Seb Hultura)</button> <br>
+
         <div id="Tecnicaplacas">
 
             <h4>Inicie e conclua a missão A Técnica das Placas.</h4>
-            Fale com Seb Hultura em [-53,40] no Cemitério O Sossego depois de ter iniciado a missão Um Inquérito
-            Alambicado - Investigação. <br>
-            Leia a inscrição da primeira tumba [-55,40] <br>
-            Leia a inscrição da segunda tumba [-56,40] <br>
-            Leia a inscrição da terceira tumba [-56,41] <br>
-            Leia a inscrição da quarta tumba [-56,41] <br>
-            Leia a inscrição da quinta tumba [-55,41] <br>
-            Leia a inscrição da sexta tumba [-56,41] <br>
-            Fale com Seb Hultura novamente [-53,40] <br>
-            Você precisa dar respostas corretas para Seb Hultura. A ordem das respostas são: <br>
+            <label class="container" onclick="travelmount('-53,40')">
+                <input type="checkbox">
+                Fale com Seb Hultura em [-53,40] no Cemitério O Sossego depois de ter iniciado a missão Um Inquérito
+                Alambicado - Investigação.
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-55,40')">
+                <input type="checkbox">
+                Leia a inscrição da primeira tumba [-55,40]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-56,40')">
+                <input type="checkbox">
+                Leia a inscrição da segunda tumba [-56,40]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-56,41')">
+                <input type="checkbox">
+                Leia a inscrição da terceira tumba [-56,41]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-56,41')">
+                <input type="checkbox">
+                Leia a inscrição da quarta tumba [-56,41]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-55,41')">
+                <input type="checkbox">
+                Leia a inscrição da quinta tumba [-55,41]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-56,41')">
+                <input type="checkbox">
+                Leia a inscrição da sexta tumba [-56,41]
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="travelmount('-53,40')">
+                <input type="checkbox">
+                Fale com Seb Hultura novamente [-53,40]
+                <span class="checkmark"></span>
+            </label>
+
+            Você precisa dar respostas corretas para Seb Hultura. A ordem das respostas são:
             <ol>
                 <li> Frisby Bufê </li>
                 <li> Joel Tribiano </li>
@@ -472,81 +702,146 @@ div{
 
 
         </div>
-        Leve as amostras de volta para Tony Bleurgh (Saré Josney) [-47,44]
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Leve as amostras de volta para Tony Bleurgh (Saré Josney) [-47,44]
+            <span class="checkmark"></span>
+        </label>
+
 
 
 
     </div>
 
-    <button id="Inqueritoidentifica1" class="start" onclick="Mudarestado('Inqueritoidentifica')">Um Inquérito Alambicado -
+    <button id="Inqueritoidentifica1" class="start" onclick="Mudarestado('Inqueritoidentifica')">Um Inquérito Alambicado
+        -
         Identificação</button> <br>
 
     <div id="Inqueritoidentifica">
 
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado -
+            Investigação.
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Descubra o mapa: Barnacabin de Saré Josney(Entre na casa atrás de Saré Josney.)
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Fale com: Saré Josney [-47,44]
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Complete a análise do DIC usando a destilaria [-47,44](Clique no alambique dentro da casa.)
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Fale com Saré Josney novamente [-47,44](Na última parte do diálogo você será informado com qual NPC falar
+            para a
+            próxima etapa. O suspeito será escolhido aleatoriamente.)
+            <span class="checkmark"></span>
+        </label>
 
-        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado -
-        Investigação. <br>
-        Descubra o mapa: Barnacabin de Saré Josney(Entre na casa atrás de Saré Josney.) <br>
-        Fale com: Saré Josney [-47,44] <br>
-        Complete a análise do DIC usando a destilaria [-47,44](Clique no alambique dentro da casa.) <br>
-        Fale com Saré Josney novamente [-47,44](Na última parte do diálogo você será informado com qual NPC falar para a
-        próxima etapa. O suspeito será escolhido aleatoriamente.)
 
     </div>
     <button id="Inqueritoconfronto1" class="start" onclick="Mudarestado('Inqueritoconfronto')">Um Inquérito Alambicado -
         Confronto</button> <br>
 
     <div id="Inqueritoconfronto">
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado -
+            Identificação.
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">
+            <input type="checkbox">
+            Consiga uma confissão do culpado identificado pelo DIC(Fale com o NPC que Saré Josney lhe deu na missão
+            anterior. Se não lembrar, consulte o item de missão Conclusão da DIC.)
+            <span class="checkmark"></span>
+        </label>
+        veja as posiçoes acima de cada npc
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Fale com Saré Josney novamente [-47,44]
+            <span class="checkmark"></span>
+        </label>
 
-        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado -
-        Identificação. <br>
-        Consiga uma confissão do culpado identificado pelo DIC(Fale com o NPC que Saré Josney lhe deu na missão
-        anterior. Se não lembrar, consulte o item de missão Conclusão da DIC.) <br>
-        Fale com Saré Josney novamente [-47,44] <br>
         Você precisar dar ao Saré Josney o nome do novo suspeito, que depende do primeiro suspeito. Se o seu primeiro
-        suspeito foi: <br>
-        Scarlet Richter - diga a ele que foi Seb Hultura. <br>
-        Otto Bilendrock - diga a ele que foi Scarlet Richter. <br>
-        Stok - diga a ele que foi Stak. <br>
-        Stak - diga a ele que foi Stok. <br>
-        Seb Hultura - diga a ele que foi Otto Bilendrock. <br>
+        suspeito foi:
+        <ul>
+            <li>Scarlet Richter - diga a ele que foi Seb Hultura.</li>
+            <li>Otto Bilendrock - diga a ele que foi Scarlet Richter.</li>
+            <li>Stok - diga a ele que foi Stak.</li>
+            <li>Stak - diga a ele que foi Stok.</li>
+            <li>Seb Hultura - diga a ele que foi Otto Bilendrock. </li>
+        </ul>
     </div>
     <button id="Inqueritoresolucao1" class="start" onclick="Mudarestado('Inqueritoresolucao')">Um Inquérito Alambicado -
         Resolução</button> <br>
 
     <div id="Inqueritoresolucao">
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado -
+            Confronto.
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Fale com: Saré Josney [-47,44]
+            <span class="checkmark"></span>
+        </label>
 
-        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia ao final da missão Um Inquérito Alambicado - Confronto.
-        <br>
-        Fale com: Saré Josney [-47,44]( <br>
+
         Você precisa dar ao Saré Josney o nome do novo suspeito, que depende de quem foi o primeiro suspeito. Se o seu
-        primeiro suspeito foi: <br>
-        Scarlet Richter - diga a ele que foi Seb Hultura. <br>
-        Otto Bilendrock - diga a ele que foi Scarlet Richter. <br>
-        Stok - diga a ele que foi Stak. <br>
-        Stak - diga a ele que foi Stok. <br>
-        Seb Hultura - diga a ele que foi Otto Bilendrock.) <br>
-        Fale com o novo suspeito <br>
-        Fale com Saré Josney novamente [-47,44](Você pode contar a verdade ou mentir. Ambas as repostas concluirão a
-        missão.) <br>
+        primeiro suspeito foi:
+        <ul>
+            <li>Scarlet Richter - diga a ele que foi Seb Hultura. </li>
+            <li>Otto Bilendrock - diga a ele que foi Scarlet Richter.</li>
+            <li>Stok - diga a ele que foi Stak.</li>
+            <li>Stak - diga a ele que foi Stok.</li>
+            <li>Seb Hultura - diga a ele que foi Otto Bilendrock.)</li>
+            <li>Fale com o novo suspeito</li>
+        </ul>
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Fale com Saré Josney novamente [-47,44](Você pode contar a verdade ou mentir. Ambas as repostas concluirão a
+            missão.)
+            <span class="checkmark"></span>
+        </label>
+
 
     </div>
     <button id="atelogo1" class="start" onclick="Mudarestado('atelogo')">É Apenas um "Até Logo"</button> <br>
 
     <div id="atelogo">
         <h4>É Apenas um "Até Logo"</h4>
-        Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia. <br>
+        <label class="container" onclick="travelmount('-47,44')">
+            <input type="checkbox">
+            Fale com Saré Josney em [-47,44] no Vilarejo de Vulkânia.
+            <span class="checkmark"></span>
+        </label>
+
     </div>
-    <button id="Boascontas1" class="start" onclick="Mudarestado('Boascontas')">As Boas Contas Fazem os Bons Amigos</button>
+    <button id="Boascontas1" class="start" onclick="Mudarestado('Boascontas')">As Boas Contas Fazem os Bons
+        Amigos</button>
     <br>
 
     <div id="Boascontas">
-        <label class="container" onclick="travelmount('-48,44')" title="dentro da cabana o otto bilendrock vende os itens">
-            <input type="checkbox"> 
+        <label class="container" onclick="travelmount('-48,44')"
+            title="dentro da cabana o otto bilendrock vende os itens">
+            <input type="checkbox">
             Items a comprar para a missão:
-           <span class="checkmark"></span>
-         </label>
-        
+            <span class="checkmark"></span>
+        </label>
+
         <ul>
 
             <li>Pedra Negra de Vulkânia </li>
@@ -554,59 +849,60 @@ div{
             <li>Relíquia do Cemitério O Sossego </li>
         </ul>
         <label class="container" onclick="travelmount('-51,45')">
-            <input type="checkbox"> 
+            <input type="checkbox">
             Fale com Bo Peye em [-51,45] na Praia de Bronze.
-           <span class="checkmark"></span>
-         </label>
-         <label class="container" onclick="travelmount('-47,42')">
-            <input type="checkbox"> 
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-47,42')">
+            <input type="checkbox">
             Fale com: Nevark, o Caçador [-47,42](Entregue 1 Estatueta de Kaska para que ele fale seu peso.)
-           <span class="checkmark"></span>
-         </label>
-         <label class="container" onclick="travelmount('-46,44')">
-            <input type="checkbox"> 
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-46,44')">
+            <input type="checkbox">
             Fale com: Dina Tapio [-46,44]
-           <span class="checkmark"></span>
-         </label>
-         <label class="container" onclick="travelmount('-46,44')">
-            <input type="checkbox"> 
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-46,44')">
+            <input type="checkbox">
             Agora clique no A.P.A.T SUNDA [-46,44] e va ate ao bar akuda
-           <span class="checkmark"></span>
-         </label>
-         <label class="container" onclick="travelmount('-44,44')">
-            <input type="checkbox"> 
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-44,44')">
+            <input type="checkbox">
             Fale com: Piki [-44,44] (dentro do bar)
-           <span class="checkmark"></span>
-         </label>
-         <label class="container" onclick="travelmount('-44,44')">
-            <input type="checkbox"> 
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-44,44')">
+            <input type="checkbox">
             Fale com: Juju [-44,44] (dentro do bar)
-           <span class="checkmark"></span>
-         </label>
-         <label class="container" onclick="travelmount('-51,40')">
-            <input type="checkbox"> 
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-51,40')">
+            <input type="checkbox">
             Fale com: G.O.Cébero [-51,40](jogar-se aos pes)
-           <span class="checkmark"></span>
-         </label>
-         <label class="container" onclick="travelmount('-52,37')">
-            <input type="checkbox"> 
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-52,37')">
+            <input type="checkbox">
             Fale com: G.O. Logia [-52,37](Entregue 1 Pedra Negra de Vulkânia para que ela fale seu peso.)
-           <span class="checkmark"></span>
-         </label>
-         <label class="container" onclick="travelmount('-53,40')">
-            <input type="checkbox"> 
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-53,40')">
+            <input type="checkbox">
             Fale com: Seb Hultura [-53,40](Responda "O dobro do triplo dividido por seis vezes o meu peso" e entregue 1
-        Relíquia do Cemitério O Sossego para que ele fale seu peso.)
-           <span class="checkmark"></span>
-         </label>
-         <label class="container" onclick="travelmount('-51,45')">
-            <input type="checkbox"> 
+            Relíquia do Cemitério O Sossego para que ele fale seu peso.)
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" onclick="travelmount('-51,45')">
+            <input type="checkbox">
             Fale com: Bo Peye novamente [-51,45]
-           <span class="checkmark"></span>
-         </label>
-        
+            <span class="checkmark"></span>
+        </label>
+
         Selecione os três NPCs cuja soma dos pesos seja igual a 215. Clique duas vezes no item Folha de Anotações para
-        consultar os pesos dos NPCs. Os valores mudam toda semana e abaixo esta uma calcuradora para ajudar xD.(os pesos deles estao apontes na folha de anotaçoes que esta no seu inventario) <br>
+        consultar os pesos dos NPCs. Os valores mudam toda semana e abaixo esta uma calcuradora para ajudar xD.(os pesos
+        deles estao apontes na folha de anotaçoes que esta no seu inventario) <br>
     </div>
     <br>
     <p>Piki <input type="text" name="Piki" id="piki"></p>
@@ -650,20 +946,29 @@ div{
                 }
             }
         }
-        function pegaUmQualquer(cord1,cord2,cord3,cord4) {
-            var nomes = [cord1, cord2, cord3,cord4];
-            console.log('cord1:'+cord1+'cord2:'+cord2+'cord3:'+cord3+'cord3:'+cord3+'cord4:'+cord4)
-            var name = nomes[Math.ceil(Math.random() * (nomes.length)-1)];
+        function pegaUmQualquer(cord1, cord2, cord3, cord4) {
+            var nomes;
+            if (cord4 != null) {
+                nomes = [cord1, cord2, cord3, cord4];
+                console.log('cord1:' + cord1 + 'cord2:' + cord2 + 'cord3:' + cord3 + 'cord3:' + cord3 + 'cord4:' + cord4)
+
+            }
+            if (cord4 == null && cord3 == null && cord2 != null) {
+                nomes = [cord1, cord2];
+                console.log('cord1:' + cord1 + 'cord2:' + cord2)
+
+            }
+            var name = nomes[Math.ceil(Math.random() * (nomes.length) - 1)];
             travelmount(name);
-}
+        }
         function Mudarestado(el) {
             var teste = el + "1";
-            
+
 
             var display = document.getElementById(el).style.display;
             if (display == "block") {
                 document.getElementById(el).style.display = 'none';
-                  document.getElementById(teste).style.border = "3px double black";
+                document.getElementById(teste).style.border = "3px double black";
             } else {
                 document.getElementById(el).style.display = 'block'
                 document.getElementById(teste).style.border = "5px solid blue";
@@ -679,33 +984,7 @@ div{
             //alert("Copied the text: " + value);
             document.getElementById("copy").textContent = '/travel ' + value;
         }
-        function help(nr, identificador) {
-            //document.getElementById("copy").textContent=identificador+nr;
-            document.getElementById(identificador + nr).style.border = "5px solid orange";
-            //document.getElementById(identificador+nr).style.color(red);
-        }
-        function limpar(identificador) {
-            //document.getElementById("copy").textContent=identificador;
-            if (identificador == 2) {
-                document.getElementById('diarias1').style.border = "5px double white";
-                document.getElementById('diarias2').style.border = "5px double white";
-                document.getElementById('diarias3').style.border = "5px double white";
-                document.getElementById('diarias4').style.border = "5px double white";
-                document.getElementById('diarias5').style.border = "5px double white";
-            } else {
-                document.getElementById('Glubrik1').style.border = "5px double white";
-                document.getElementById('Glubrik2').style.border = "5px double white";
-                document.getElementById('Glubrik3').style.border = "5px double white";
-                document.getElementById('Gluxur1').style.border = "5px double white";
-                document.getElementById('Gluxur2').style.border = "5px double white";
-                document.getElementById('Gluxur3').style.border = "5px double white";
-                document.getElementById('Gluxur4').style.border = "5px double white";
-                document.getElementById('Glupanar1').style.border = "5px double white";
-                document.getElementById('Glupanar2').style.border = "5px double white";
-                document.getElementById('Glupanar3').style.border = "5px double white";
-            }
 
-        }
     </script>
 
 </body>
