@@ -184,6 +184,28 @@
         div {
             padding-left: 1em;
         }
+        .testem{
+            position: absolute;
+            overflow: visible;
+            background-color: greenyellow;
+            padding: 15px;
+    right: 0;
+            top: 0; 
+            z-index: -1;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .wrapper{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 800px;
+height: auto ;
+
+
+}
+
     </style>
     <h2>Guia de ajuda da ilha de vulkania!</h2>
 
@@ -878,9 +900,10 @@
             Fale com: Juju [-44,44] (dentro do bar)
             <span class="checkmark"></span>
         </label>
-        <label class="container" onclick="travelmount('-51,40')">
+        <label class="container" onclick="travelmount('-53,40')">
             <input type="checkbox">
-            Fale com: G.O.Cébero [-51,40](jogar-se aos pes)
+            Fale com: Seb Hultura [-53,40](Responda "O dobro do triplo dividido por seis vezes o meu peso" e entregue 1
+            Relíquia do Cemitério O Sossego para que ele fale seu peso.)
             <span class="checkmark"></span>
         </label>
         <label class="container" onclick="travelmount('-52,37')">
@@ -888,10 +911,10 @@
             Fale com: G.O. Logia [-52,37](Entregue 1 Pedra Negra de Vulkânia para que ela fale seu peso.)
             <span class="checkmark"></span>
         </label>
-        <label class="container" onclick="travelmount('-53,40')">
+        
+        <label class="container" onclick="travelmount('-51,40')">
             <input type="checkbox">
-            Fale com: Seb Hultura [-53,40](Responda "O dobro do triplo dividido por seis vezes o meu peso" e entregue 1
-            Relíquia do Cemitério O Sossego para que ele fale seu peso.)
+            Fale com: G.O.Cébero [-51,40](jogar-se aos pes)
             <span class="checkmark"></span>
         </label>
         <label class="container" onclick="travelmount('-51,45')">
@@ -905,9 +928,9 @@
         deles estao apontes na folha de anotaçoes que esta no seu inventario) <br>
     </div>
     <br>
-    <p>Piki <input type="text" name="Piki" id="piki"></p>
-
     <p>Juju <input type="text" name="Juju" id="juju"></p>
+
+    <p>Piki <input type="text" name="Piki" id="piki"></p>
 
     <p>G.O.C <input type="text" name="G.O.C" id="goc"></p>
 
@@ -921,8 +944,13 @@
 
     <input type="button" value="calculate" onclick="calcular()">
     <br>
+    <div class="wrapper">
 
-    <span id="copy"> </span>
+    
+    
+    <span class="testem" id="copy"> </span>
+    <span></span>
+</div>
     <script>
         function calcular() {
             let piki = parseInt(document.getElementById("piki").value);
@@ -939,7 +967,7 @@
                     for (let index3 = 0; index3 <= 6; index3++) {
                         if (index1 !== index2 && index2 !== index3 && index1 !== index3) {
                             if (pesos[index1] + pesos[index2] + pesos[index3] == 215) {
-                                document.getElementById("copy").textContent = nomes[index1] + pesos[index1] + '+' + nomes[index2] + pesos[index2] + '+' + nomes[index3] + pesos[index3];
+                                document.getElementById("copy").textContent = nomes[index1] + ' : ' + pesos[index1] + ' + ' + nomes[index2] + ' : ' + pesos[index2] + ' + ' + nomes[index3] + ' : ' + pesos[index3];
                             }
                         }
                     }
